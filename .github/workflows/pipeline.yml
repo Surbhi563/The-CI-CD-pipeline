@@ -1,0 +1,16 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a demo script
+      run: echo Let's make a pipeline
+    - name: Run a pipeline script
+      run: |
+        echo Add other actions to build, test, and deploy your project
