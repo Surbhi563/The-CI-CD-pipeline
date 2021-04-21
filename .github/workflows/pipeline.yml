@@ -9,8 +9,9 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: Run a demo script
+    - name: Run a one-line script
       run: echo Let's make a pipeline
-    - name: Run a pipeline script
+    - name: Run a multi-line script
       run: |
-        echo Add other actions to build, test, and deploy your project
+        echo Add other actions to build,
+        echo test, and deploy your project
